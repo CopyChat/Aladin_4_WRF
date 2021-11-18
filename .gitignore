@@ -1,0 +1,23 @@
+# Pycharm files
+*.xml
+
+# dir:
+doc/
+doc/*
+
+
+# plot:
+plot
+
+# netcdf, etc...
+*.nc
+
+.DS_Store
+*.temp
+/__pycache__
+
+/.idea
+/.hydra
+*.mat
+.hydra
+/local_data

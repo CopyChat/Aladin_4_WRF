@@ -1,0 +1,30 @@
+# @package _global_
+
+hydra:
+  run:
+    # Output directory for normal runs
+#    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S}
+    dir: .
+
+# Directories
+dir:
+  working: /Users/ctang/Microsoft_OneDrive/OneDrive/CODE/Aladin_4_WRF/
+  data: /Users/ctang/Microsoft_OneDrive/OneDrive/CODE/Aladin_4_WRF/dataset
+  local_data: /Users/ctang/Microsoft_OneDrive/OneDrive/CODE/Aladin_4_WRF/local_data
+  plot: /Users/ctang/Microsoft_OneDrive/OneDrive/CODE/Aladin_4_WRF/plot
+  obs: /Users/ctang/climate/GLOBALDATA/OBSDATA/
+
+job:
+  loading_model_setup_from_ccub: 1
+
+
+output:
+  matched_mf_cmsaf_file: 'mf_in_cmsaf_grid.nc'
+  ttt_class_monthly: 'ttt_class_at_year_month.png'
+
+
+
+
+
+
+

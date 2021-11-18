@@ -1,0 +1,327 @@
+taskid: 0 hostname: part053.u-bourgogne.fr
+ module_io_quilt_old.F        2931 F
+Quilting with   1 groups of   0 I/O tasks.
+ Ntasks in X            8 , ntasks in Y            8
+*************************************
+Configuring physics suite 'conus'
+
+         mp_physics:      8      8      8      8
+         cu_physics:      1*     0*     0*     0*
+      ra_lw_physics:      4      4      4      4
+      ra_sw_physics:      4      4      4      4
+     bl_pbl_physics:      9*     9*     9*     9*
+  sf_sfclay_physics:      2      2      2      2
+ sf_surface_physics:      2      2      2      2
+
+(* = option overrides suite setting)
+*************************************
+  Domain # 1: dx = 10000.000 m
+  Domain # 2: dx =  2000.000 m
+  Domain # 3: dx =   400.000 m
+  Domain # 4: dx =   400.000 m
+WRF V4.2 MODEL
+ *************************************
+ Parent domain
+ ids,ide,jds,jde            1          93           1          89
+ ims,ime,jms,jme           -4          19          -4          18
+ ips,ipe,jps,jpe            1          12           1          11
+ *************************************
+DYNAMICS OPTION: Eulerian Mass Coordinate
+   alloc_space_field: domain            1 ,               17486696  bytes allocated
+  med_initialdata_input: calling input_input
+   Input data is acceptable to use: wrfinput_d01
+ CURRENT DATE          = 2017-01-01_00:00:00
+ SIMULATION START DATE = 2017-01-01_00:00:00
+Timing for processing wrfinput file (stream 0) for domain        1:    0.19870 elapsed seconds
+Max map factor in domain 1 =  1.02. Scale the dt in the model accordingly.
+ D01: Time step                              =    60.00000      (s)
+ D01: Grid Distance                          =    10.00000      (km)
+ D01: Grid Distance Ratio dt/dx              =    6.000000      (s/km)
+ D01: Ratio Including Maximum Map Factor     =    6.141611      (s/km)
+ D01: NML defined reasonable_time_step_ratio =    6.000000
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+  *** SATURATION VAPOR PRESSURE TABLE COMPLETED ***
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ThompMP: read qr_acr_qgV2.dat instead of computing
+ThompMP: read qr_acr_qsV2.dat instead of computing
+ThompMP: read freezeH2O.dat instead of computing
+ *************************************
+ Nesting domain
+ ids,ide,jds,jde            1         241           1         241
+ ims,ime,jms,jme           -4          40          -4          40
+ ips,ipe,jps,jpe            1          30           1          30
+ INTERMEDIATE domain
+ ids,ide,jds,jde           18          71          16          69
+ ims,ime,jms,jme           13          35          11          33
+ ips,ipe,jps,jpe           16          25          14          23
+ *************************************
+d01 2017-01-01_00:00:00  alloc_space_field: domain            2 ,                5861320  bytes allocated
+d01 2017-01-01_00:00:00  alloc_space_field: domain            2 ,               58232036  bytes allocated
+d01 2017-01-01_00:00:00 *** Initializing nest domain # 2 from an input file. ***
+d01 2017-01-01_00:00:00 med_initialdata_input: calling input_input
+d01 2017-01-01_00:00:00  Input data is acceptable to use: wrfinput_d02
+Timing for processing wrfinput file (stream 0) for domain        2:    0.82363 elapsed seconds
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+  *** SATURATION VAPOR PRESSURE TABLE COMPLETED ***
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+  *** SATURATION VAPOR PRESSURE TABLE COMPLETED ***
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+Max map factor in domain 1 =  1.02. Scale the dt in the model accordingly.
+ D01: Time step                              =    60.00000      (s)
+ D01: Grid Distance                          =    10.00000      (km)
+ D01: Grid Distance Ratio dt/dx              =    6.000000      (s/km)
+ D01: Ratio Including Maximum Map Factor     =    6.141611      (s/km)
+ D01: NML defined reasonable_time_step_ratio =    6.000000
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+  *** SATURATION VAPOR PRESSURE TABLE COMPLETED ***
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+Timing for Writing wrfout_d01_2017-01-01_00:00:00 for domain        1:    0.52183 elapsed seconds
+d01 2017-01-01_00:00:00  Input data is acceptable to use: wrfbdy_d01
+Timing for processing lateral boundary for domain        1:    0.14116 elapsed seconds
+ Tile Strategy is not specified. Assuming 1D-Y
+WRF TILE   1 IS      1 IE     12 JS      1 JE     11
+WRF NUMBER OF TILES =   1
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:           0  idata:           1  year:        1970  co2:    325.000000000000       n2o:    295.000000000000       ch4:   1420.00000000000
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:           0  idata:           2  year:        1980  co2:    337.000000000000       n2o:    301.000000000000       ch4:   1570.00000000000
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:           0  idata:           3  year:        1990  co2:    353.000000000000       n2o:    308.000000000000       ch4:   1700.00000000000
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:           0  idata:           4  year:        2000  co2:    369.000000000000       n2o:    316.000000000000       ch4:   1760.00000000000
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:           0  idata:           5  year:        2010  co2:    391.000000000000       n2o:    324.000000000000       ch4:   1871.00000000000
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:           0  idata:           6  year:        2020  co2:    420.000000000000       n2o:    331.000000000000       ch4:   2026.00000000000
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:           0  idata:           7  year:        2030  co2:    454.000000000000       n2o:    338.000000000000       ch4:   2202.00000000000
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:           0  idata:           8  year:        2040  co2:    491.000000000000       n2o:    344.000000000000       ch4:   2337.00000000000
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:           0  idata:           9  year:        2050  co2:    532.000000000000       n2o:    350.000000000000       ch4:   2400.00000000000
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:           0  idata:          10  year:        2060  co2:    572.000000000000       n2o:    356.000000000000       ch4:   2386.00000000000
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:           0  idata:          11  year:        2070  co2:    611.000000000000       n2o:    360.000000000000       ch4:   2301.00000000000
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:           0  idata:          12  year:        2080  co2:    649.000000000000       n2o:    365.000000000000       ch4:   2191.00000000000
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:           0  idata:          13  year:        2090  co2:    685.000000000000       n2o:    368.000000000000       ch4:   2078.00000000000
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:           0  idata:          14  year:        2100  co2:    717.000000000000       n2o:    372.000000000000       ch4:   1974.00000000000
+d01 2017-01-01_00:00:00  CLWRF reading...: istatus:          -1  idata:          15  year:           0  co2:   0.000000000000000E+000  n2o:   0.000000000000000E+000  ch4:  0.000000000000000E+000
+ *************************************
+ Nesting domain
+ ids,ide,jds,jde            1         221           1         221
+ ims,ime,jms,jme           -4          40          -4          40
+ ips,ipe,jps,jpe            1          28           1          28
+ INTERMEDIATE domain
+ ids,ide,jds,jde           60         109          50          99
+ ims,ime,jms,jme           55          77          45          67
+ ips,ipe,jps,jpe           58          67          48          57
+ *************************************
+d02 2017-01-01_00:00:00  alloc_space_field: domain            3 ,                5861320  bytes allocated
+d02 2017-01-01_00:00:00  alloc_space_field: domain            3 ,               58219532  bytes allocated
+d02 2017-01-01_00:00:00 *** Initializing nest domain # 3 from an input file. ***
+d02 2017-01-01_00:00:00 med_initialdata_input: calling input_input
+d02 2017-01-01_00:00:00  Input data is acceptable to use: wrfinput_d03
+Timing for processing wrfinput file (stream 0) for domain        3:    0.69487 elapsed seconds
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+  *** SATURATION VAPOR PRESSURE TABLE COMPLETED ***
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+  *** SATURATION VAPOR PRESSURE TABLE COMPLETED ***
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+  *** SATURATION VAPOR PRESSURE TABLE COMPLETED ***
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ *************************************
+ Nesting domain
+ ids,ide,jds,jde            1         221           1         221
+ ims,ime,jms,jme           -4          40          -4          40
+ ips,ipe,jps,jpe            1          28           1          28
+ INTERMEDIATE domain
+ ids,ide,jds,jde          163         212          96         145
+ ims,ime,jms,jme          158         180          91         113
+ ips,ipe,jps,jpe          161         170          94         103
+ *************************************
+d02 2017-01-01_00:00:00  alloc_space_field: domain            4 ,                5861320  bytes allocated
+d02 2017-01-01_00:00:00  alloc_space_field: domain            4 ,               58219532  bytes allocated
+d02 2017-01-01_00:00:00 *** Initializing nest domain # 4 from an input file. ***
+d02 2017-01-01_00:00:00 med_initialdata_input: calling input_input
+d02 2017-01-01_00:00:00  Input data is acceptable to use: wrfinput_d04
+Timing for processing wrfinput file (stream 0) for domain        4:    0.71510 elapsed seconds
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+  *** SATURATION VAPOR PRESSURE TABLE COMPLETED ***
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+  *** SATURATION VAPOR PRESSURE TABLE COMPLETED ***
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+  *** SATURATION VAPOR PRESSURE TABLE COMPLETED ***
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+ UW Moist Turbulence Scheme by Bretherton and Park
+Timing for Writing wrfout_d02_2017-01-01_00:00:00 for domain        2:    2.15238 elapsed seconds
+ Tile Strategy is not specified. Assuming 1D-Y
+WRF TILE   1 IS      1 IE     30 JS      1 JE     30
+WRF NUMBER OF TILES =   1
+Timing for Writing wrfout_d03_2017-01-01_00:00:00 for domain        3:    1.94138 elapsed seconds
+ Tile Strategy is not specified. Assuming 1D-Y
+WRF TILE   1 IS      1 IE     28 JS      1 JE     28
+WRF NUMBER OF TILES =   1
+Timing for main: time 2017-01-01_00:00:02 on domain   3:    2.20306 elapsed seconds
+Timing for main: time 2017-01-01_00:00:04 on domain   3:    0.11881 elapsed seconds
+Timing for main: time 2017-01-01_00:00:07 on domain   3:    0.11433 elapsed seconds
+Timing for main: time 2017-01-01_00:00:09 on domain   3:    0.11534 elapsed seconds
+Timing for main: time 2017-01-01_00:00:12 on domain   3:    0.11519 elapsed seconds
+Timing for Writing wrfout_d04_2017-01-01_00:00:00 for domain        4:    1.84382 elapsed seconds
+ Tile Strategy is not specified. Assuming 1D-Y
+WRF TILE   1 IS      1 IE     28 JS      1 JE     28
+WRF NUMBER OF TILES =   1
+Timing for main: time 2017-01-01_00:00:02 on domain   4:    2.11156 elapsed seconds
+Timing for main: time 2017-01-01_00:00:04 on domain   4:    0.11716 elapsed seconds
+Timing for main: time 2017-01-01_00:00:07 on domain   4:    0.11583 elapsed seconds
+Timing for main: time 2017-01-01_00:00:09 on domain   4:    0.11459 elapsed seconds
+Timing for main: time 2017-01-01_00:00:12 on domain   4:    0.11503 elapsed seconds
+Timing for main: time 2017-01-01_00:00:12 on domain   2:   10.34170 elapsed seconds
+Timing for main: time 2017-01-01_00:00:14 on domain   3:    0.12053 elapsed seconds
+Timing for main: time 2017-01-01_00:00:16 on domain   3:    0.11868 elapsed seconds
+Timing for main: time 2017-01-01_00:00:19 on domain   3:    0.11368 elapsed seconds
+Timing for main: time 2017-01-01_00:00:21 on domain   3:    0.11816 elapsed seconds
+Timing for main: time 2017-01-01_00:00:24 on domain   3:    0.11387 elapsed seconds
+Timing for main: time 2017-01-01_00:00:14 on domain   4:    0.11600 elapsed seconds
+Timing for main: time 2017-01-01_00:00:16 on domain   4:    0.11462 elapsed seconds
+Timing for main: time 2017-01-01_00:00:19 on domain   4:    0.11421 elapsed seconds
+Timing for main: time 2017-01-01_00:00:21 on domain   4:    0.11442 elapsed seconds
+Timing for main: time 2017-01-01_00:00:24 on domain   4:    0.11534 elapsed seconds
+Timing for main: time 2017-01-01_00:00:24 on domain   2:    1.53522 elapsed seconds
+Timing for main: time 2017-01-01_00:00:26 on domain   3:    0.11886 elapsed seconds
+Timing for main: time 2017-01-01_00:00:28 on domain   3:    0.11697 elapsed seconds
+Timing for main: time 2017-01-01_00:00:31 on domain   3:    0.11412 elapsed seconds
+Timing for main: time 2017-01-01_00:00:33 on domain   3:    0.11400 elapsed seconds
+Timing for main: time 2017-01-01_00:00:36 on domain   3:    0.11516 elapsed seconds
+Timing for main: time 2017-01-01_00:00:26 on domain   4:    0.11523 elapsed seconds
+Timing for main: time 2017-01-01_00:00:28 on domain   4:    0.11398 elapsed seconds
+Timing for main: time 2017-01-01_00:00:31 on domain   4:    0.11437 elapsed seconds
+Timing for main: time 2017-01-01_00:00:33 on domain   4:    0.11449 elapsed seconds
+Timing for main: time 2017-01-01_00:00:36 on domain   4:    0.11397 elapsed seconds
+Timing for main: time 2017-01-01_00:00:36 on domain   2:    1.52856 elapsed seconds
+Timing for main: time 2017-01-01_00:00:38 on domain   3:    0.12201 elapsed seconds
+Timing for main: time 2017-01-01_00:00:40 on domain   3:    0.11639 elapsed seconds
+Timing for main: time 2017-01-01_00:00:43 on domain   3:    0.11340 elapsed seconds
+Timing for main: time 2017-01-01_00:00:45 on domain   3:    0.11320 elapsed seconds
+Timing for main: time 2017-01-01_00:00:48 on domain   3:    0.11100 elapsed seconds
+Timing for main: time 2017-01-01_00:00:38 on domain   4:    0.11551 elapsed seconds
+Timing for main: time 2017-01-01_00:00:40 on domain   4:    0.11425 elapsed seconds
+Timing for main: time 2017-01-01_00:00:43 on domain   4:    0.11441 elapsed seconds
+Timing for main: time 2017-01-01_00:00:45 on domain   4:    0.11433 elapsed seconds
+Timing for main: time 2017-01-01_00:00:48 on domain   4:    0.11593 elapsed seconds
+Timing for main: time 2017-01-01_00:00:48 on domain   2:    1.52620 elapsed seconds
+Timing for main: time 2017-01-01_00:00:50 on domain   3:    0.11647 elapsed seconds
+Timing for main: time 2017-01-01_00:00:52 on domain   3:    0.11123 elapsed seconds
+Timing for main: time 2017-01-01_00:00:55 on domain   3:    0.11015 elapsed seconds
+Timing for main: time 2017-01-01_00:00:57 on domain   3:    0.10997 elapsed seconds
+Timing for main: time 2017-01-01_00:01:00 on domain   3:    0.11029 elapsed seconds
+Timing for main: time 2017-01-01_00:00:50 on domain   4:    0.11502 elapsed seconds
+Timing for main: time 2017-01-01_00:00:52 on domain   4:    0.11442 elapsed seconds
+Timing for main: time 2017-01-01_00:00:55 on domain   4:    0.11401 elapsed seconds
+Timing for main: time 2017-01-01_00:00:57 on domain   4:    0.11452 elapsed seconds
+Timing for main: time 2017-01-01_00:01:00 on domain   4:    0.11377 elapsed seconds
+Timing for main: time 2017-01-01_00:01:00 on domain   2:    1.50578 elapsed seconds
+Timing for main: time 2017-01-01_00:01:00 on domain   1:   18.69324 elapsed seconds
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+wrf.exe            0000000002DBF3FD  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002AEC0ADC35F0  Unknown               Unknown  Unknown
+wrf.exe            0000000001F6D09F  Unknown               Unknown  Unknown
+wrf.exe            0000000001F45123  Unknown               Unknown  Unknown
+wrf.exe            0000000001F3F606  Unknown               Unknown  Unknown
+wrf.exe            0000000001F33C0F  Unknown               Unknown  Unknown
+wrf.exe            00000000017221D0  Unknown               Unknown  Unknown
+wrf.exe            000000000181F617  Unknown               Unknown  Unknown
+wrf.exe            0000000001275B1E  Unknown               Unknown  Unknown
+wrf.exe            00000000010818F8  Unknown               Unknown  Unknown
+wrf.exe            00000000004D38BA  Unknown               Unknown  Unknown
+wrf.exe            00000000004D3BE3  Unknown               Unknown  Unknown
+wrf.exe            00000000004D3BE3  Unknown               Unknown  Unknown
+wrf.exe            000000000040D511  Unknown               Unknown  Unknown
+wrf.exe            000000000040D4CB  Unknown               Unknown  Unknown
+wrf.exe            000000000040D45E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AEC0AFF2505  __libc_start_main     Unknown  Unknown
+wrf.exe            000000000040D369  Unknown               Unknown  Unknown
